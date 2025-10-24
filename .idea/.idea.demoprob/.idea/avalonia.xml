@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AvaloniaProject">
+    <option name="projectPerEditor">
+      <map>
+        <entry key="demoprob/App.axaml" value="demoprob/demoprob.csproj" />
+        <entry key="demoprob/Views/MainWindow.axaml" value="demoprob/demoprob.csproj" />
+        <entry key="demoprob/Views/MaterialCalculatorWindow.axaml" value="demoprob/demoprob.csproj" />
+        <entry key="demoprob/Views/ProductAddEditWindow.axaml" value="demoprob/demoprob.csproj" />
+        <entry key="demoprob/Views/ProductMaterialsWindow.axaml" value="demoprob/demoprob.csproj" />
+        <entry key="demoprob/Views/ProductsWindow.axaml" value="demoprob/demoprob.csproj" />
+      </map>
+    </option>
+  </component>
+</project>

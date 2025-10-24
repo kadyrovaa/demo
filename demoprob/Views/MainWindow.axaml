@@ -1,0 +1,48 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="demoprob.Views.MainWindow"
+        Title="Система управления продукцией"
+        Width="900" 
+        Height="600">
+    
+    <StackPanel Margin="20" Spacing="20">
+        <TextBlock Text="🏭 Система управления продукцией" 
+                   FontSize="24" 
+                   FontWeight="Bold"
+                   HorizontalAlignment="Center"/>
+        
+        <StackPanel Orientation="Horizontal" Spacing="15" HorizontalAlignment="Center">
+            <Button Content="📦 Продукция" 
+                    Click="ShowProducts_Click"
+                    Width="150" 
+                    Height="40"
+                    FontSize="14"/>
+            
+            <Button Content="📋 Материалы" 
+                    Click="ShowMaterials_Click"
+                    Width="150" 
+                    Height="40"
+                    FontSize="14"/>
+            
+            <Button Content="🧮 Калькулятор" 
+                    Click="ShowCalculator_Click"
+                    Width="150" 
+                    Height="40"
+                    FontSize="14"/>
+            <Button Content="Материалы продукции" Click="ShowProductMaterials_Click" Width="150"/>
+        </StackPanel>
+        
+        <Border Background="#f5f5f5" 
+                CornerRadius="10" 
+                Padding="20"
+                Margin="0,20">
+            <StackPanel Spacing="10">
+                <TextBlock Text="Добро пожаловать в систему управления продукцией компании" 
+                           FontSize="16"
+                           FontWeight="SemiBold"/>
+                <TextBlock Text="Выберите один из разделов для работы с данными" 
+                           Foreground="Gray"/>
+            </StackPanel>
+        </Border>
+    </StackPanel>
+</Window>

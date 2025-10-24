@@ -1,0 +1,21 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="demoprob.Views.ProductsWindow"
+        Title="Продукция"
+        Width="800" 
+        Height="600">
+    
+    <StackPanel Margin="20" Spacing="15">
+        <TextBlock Text="📦 Список продукции" FontSize="20" FontWeight="Bold"/>
+        
+        <Button Content="🧮 Открыть калькулятор" 
+                Click="ShowCalculator_Click"
+                HorizontalAlignment="Left"
+                Width="200"/>
+        
+        <Button Content="📋 Показать материалы" 
+                Click="ShowMaterials_Click"
+                HorizontalAlignment="Left"
+                Width="200"/>
+    </StackPanel>
+</Window>

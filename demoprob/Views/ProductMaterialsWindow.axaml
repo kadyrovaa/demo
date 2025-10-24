@@ -1,0 +1,45 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="demoprob.Views.ProductMaterialsWindow"
+        Title="Материалы продукции"
+        Width="1000" 
+        Height="600">
+    
+    <StackPanel Margin="20" Spacing="15">
+        <TextBlock Text="Материалы продукции" FontSize="18" FontWeight="Bold"/>
+        
+        <StackPanel Orientation="Horizontal" Spacing="10">
+            <Button Content="← Назад" Click="GoBack_Click" Width="80"/>
+            <Button Content="🧮 Калькулятор" Click="ShowCalculator_Click" Width="120"/>
+            <Button Content="Обновить" Click="Refresh_Click" Width="80"/>
+        </StackPanel>
+        
+        <!-- Заголовки таблицы -->
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="50"/>
+                <ColumnDefinition Width="120"/>
+                <ColumnDefinition Width="80"/>
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition Width="120"/>
+                <ColumnDefinition Width="120"/>
+            </Grid.ColumnDefinitions>
+            
+            <TextBlock Grid.Column="0" Text="ID" FontWeight="Bold" Background="LightGray" Padding="5"/>
+            <TextBlock Grid.Column="1" Text="Артикул" FontWeight="Bold" Background="LightGray" Padding="5"/>
+            <TextBlock Grid.Column="2" Text="Материал ID" FontWeight="Bold" Background="LightGray" Padding="5"/>
+            <TextBlock Grid.Column="3" Text="Количество" FontWeight="Bold" Background="LightGray" Padding="5"/>
+            <TextBlock Grid.Column="4" Text="Название материала" FontWeight="Bold" Background="LightGray" Padding="5"/>
+            <TextBlock Grid.Column="5" Text="Ед. измерения" FontWeight="Bold" Background="LightGray" Padding="5"/>
+            <TextBlock Grid.Column="6" Text="Цена за ед." FontWeight="Bold" Background="LightGray" Padding="5"/>
+        </Grid>
+        
+        <!-- Контейнер для данных -->
+        <ScrollViewer Name="DataScrollViewer" Height="400" VerticalScrollBarVisibility="Auto">
+            <StackPanel Name="DataStackPanel"/>
+        </ScrollViewer>
+        
+        <TextBlock Name="StatusText" FontSize="12" Foreground="Gray"/>
+    </StackPanel>
+</Window>

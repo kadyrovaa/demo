@@ -1,0 +1,54 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="demoprob.Views.MaterialCalculatorWindow"
+        Title="Калькулятор материалов"
+        Width="500" 
+        Height="450">
+    
+    <StackPanel Margin="20" Spacing="15">
+        <TextBlock Text="🧮 Калькулятор закупки материалов" FontSize="18" FontWeight="Bold"/>
+        
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            
+            <TextBlock Grid.Row="0" Grid.Column="0" Text="ID типа продукции:" VerticalAlignment="Center"/>
+            <TextBox x:Name="ProductTypeId" Grid.Row="0" Grid.Column="1" Margin="5"/>
+            
+            <TextBlock Grid.Row="1" Grid.Column="0" Text="ID типа материала:" VerticalAlignment="Center"/>
+            <TextBox x:Name="MaterialTypeId" Grid.Row="1" Grid.Column="1" Margin="5"/>
+            
+            <TextBlock Grid.Row="2" Grid.Column="0" Text="Количество продукции:" VerticalAlignment="Center"/>
+            <TextBox x:Name="ProductQuantity" Grid.Row="2" Grid.Column="1" Margin="5"/>
+            
+            <TextBlock Grid.Row="3" Grid.Column="0" Text="Параметр 1:" VerticalAlignment="Center"/>
+            <TextBox x:Name="Parameter1" Grid.Row="3" Grid.Column="1" Margin="5"/>
+            
+            <TextBlock Grid.Row="4" Grid.Column="0" Text="Параметр 2:" VerticalAlignment="Center"/>
+            <TextBox x:Name="Parameter2" Grid.Row="4" Grid.Column="1" Margin="5"/>
+            
+            <TextBlock Grid.Row="5" Grid.Column="0" Text="Материал на складе:" VerticalAlignment="Center"/>
+            <TextBox x:Name="MaterialStock" Grid.Row="5" Grid.Column="1" Margin="5"/>
+            
+            <TextBlock x:Name="ResultText" Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2" 
+                      Margin="0,10" FontWeight="Bold"/>
+        </Grid>
+        
+        <StackPanel Orientation="Horizontal" Spacing="10">
+            <Button Content="Рассчитать" Click="Calculate_Click" Width="100"/>
+            <Button Content="Закрыть" Click="Close_Click" Width="80"/>
+        </StackPanel>
+    </StackPanel>
+</Window>
